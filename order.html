@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from mrkrabs.eu/order.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jun 2024 03:23:19 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <link
+    rel="icon"
+    href="../i.ibb.co/f1MhYV3/EURONEXUS-1.png"
+    type="image/icon type"
+  />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. Krabs Bestellung</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,900;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.html"
+    ></script>
+    <script
+      nomodule
+      src="unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.html"
+    ></script>
+  </head>
+
+  <body>
+    <div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    <header>
+      <span id="httpsCheck"
+        ><ion-icon name="lock-closed"></ion-icon>URL Verizifierung:
+        <span class="httpsTag">https://mrkrabs.eu</span></span
+      >
+      <nav>
+        <ul>
+          <li><a href="index-2.html">SHOP</a></li>
+          <li><a href="shipping.html">VERSAND</a></li>
+          <li>
+            <a href="https://t.me/mrkrabsservice2021" target="_blank">PROOF</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="order">
+      <h1>Bestellung</h1>
+      <div class="order-details">
+        <span id="order-holder"
+          ><input
+            type="text"
+            class="notranslate"
+            disabled
+            id="order-number"
+            value="f3e35bb7-5776-order"
+          />
+          <ion-icon id="copyButton" name="copy-outline"></ion-icon>
+        </span>
+        <span id="copy-confirm">Copied!</span>
+        <div class="steps">
+          <span class="step"
+            ><span class="stepnumber">1</span>Kopieren sie ihre
+            Bestellnummer</span
+          >
+          <span class="step"
+            ><span class="stepnumber">2</span>Senden Sie die Bestellnummer und Codes an den Bestellbot</span
+          >
+          <span class="step"
+            ><span class="stepnumber">3</span>Befolgen sie die Anweisungen</span
+          >
+        </div>
+        <a href="https://t.me/MrKrabsBestellnummer_bot">Telegram</a>
+      </div>
+      <!-- <span id="order-text">Kindly send this order number to <mark><a href="#">@#</a></mark> on Telegram</span> -->
+    </div>
+  </body>
+  <script
+    src="code.jquery.com/jquery-3.6.1.min.html"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script src="scripts/order.js"></script>
+  <script>
+    // Function to generate a random order number
+    function generateRandomOrderNumber() {
+      return (
+        Math.random().toString(36).substring(2, 15) +
+        Math.random().toString(36).substring(2, 15)
+      );
+    }
+
+    // Update the order number on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      const orderNumberInput = document.getElementById("order-number");
+      orderNumberInput.value = generateRandomOrderNumber();
+    });
+  </script>
+
+<!-- Mirrored from mrkrabs.eu/order.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Jun 2024 03:23:19 GMT -->
+</html>
+<!-- &copy; 2024 Mr. Krabs. Alle Rechte vorbehalten. -->
